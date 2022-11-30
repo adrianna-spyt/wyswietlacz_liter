@@ -7,7 +7,7 @@ import time
 running=True
 szerokosc_ekranu=900
 wysokosc_ekranu=600
-lista_liter=["A","Ą","B","C","D","E","Ę","F","G","H","I","J","K","L","Ł","M","N","O","Ó","P","Q","R","S","Ś","T","U","V","W","X","Y","Z","Ź","Ż"]
+lista_liter=["A","Ą","B","C","Ć","D","E","Ę","F","G","H","I","J","K","L","Ł","M","N","Ń","O","Ó","P","Q","R","S","Ś","T","U","V","W","X","Y","Z","Ź","Ż"]
 # lista_liter=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 czas_mrugania=[5,4,3,2,1]
 pg.init()
@@ -41,7 +41,7 @@ while running:
             zacznij_od=i+1
         else:
             zacznij_od=0
-        if ileliter>=15:
+        if ileliter>=10:
             break
     if ileliter>=10:
         poczatek_mrugania=time.time()
