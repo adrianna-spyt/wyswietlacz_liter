@@ -9,7 +9,7 @@ lista_liter=["A","Ą","B","C","Ć","D","E","Ę","F","G","H","I","J","K","L","Ł"
 czas_mrugania=[5,4,3,2,1]
 pg.init()
 ekran=pg.display.set_mode((szerokosc_ekranu,wysokosc_ekranu))
-ekranname=pg.display.set_caption("Litery")
+ekranname=pg.display.set_caption("Wyświetlacz liter")
 pg.display.flip()
 ekran.fill((0,0,0))
 font = pg.font.SysFont("Arial",150)
