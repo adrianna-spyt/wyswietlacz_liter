@@ -1,6 +1,3 @@
-# import pandas as pd
-# import numpy as np
-# import matplotlib.pyplot as plt
 import pygame as pg
 import time
 
@@ -22,10 +19,9 @@ czas_poczatkowy=time.time()
 with open("litery_czas.txt", "a") as myfile:
     myfile.write("Początkowy czas:" + str(time.time()) + '\n')
 while running:
-    # przycisk = pg.key.get_pressed()
-    # if przycisk[pg.K_ESCAPE]:
-    #     self.running=False
-    #     break
+    for event in pg.event.get():
+        if event.type==pg.QUIT:
+            running=False
     for i in range(zacznij_od,len(lista_liter)):
         poczatek_wyswietlania=time.time()
         with open("litery_czas.txt", "a") as myfile:
@@ -58,3 +54,4 @@ while running:
                 pg.display.update()
         ileliter=0
         font = pg.font.SysFont("Arial",150)
+pg.quit()
