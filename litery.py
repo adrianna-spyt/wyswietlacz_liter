@@ -43,7 +43,7 @@ while running:
         poczatek_mrugania=time.time()
         font = pg.font.SysFont("Arial",70)
         with open("litery_czas.txt", "a") as myfile:
-            myfile.write('Czas na mruganie, ' + str(poczatek_wyswietlania) + '\n')
+            myfile.write('Czas na mruganie, ' + str(poczatek_mrugania) + '\n')
         for j in range(len(czas_mrugania)):
             while time.time()<poczatek_mrugania+j+1:
                 ekran.fill((0,0,0))
